@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Palatino.ttc">
+            <string>Palatino-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4Z-z3-055">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="VwU-s7-XcF">
+                                        <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VwU-s7-XcF" secondAttribute="height" multiplier="1:1" id="w3f-Tp-uLS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLSFlasher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dc6-y4-nc8">
+                                        <rect key="frame" x="53" y="205" width="269" height="57.5"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="52"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2666666667" green="0.44705882349999998" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VwU-s7-XcF" firstAttribute="width" secondItem="M4Z-z3-055" secondAttribute="width" id="D6e-yP-L7z"/>
+                                    <constraint firstItem="Dc6-y4-nc8" firstAttribute="centerY" secondItem="M4Z-z3-055" secondAttribute="centerY" multiplier="0.7" id="TcP-XM-lpo"/>
+                                    <constraint firstItem="VwU-s7-XcF" firstAttribute="centerY" secondItem="M4Z-z3-055" secondAttribute="centerY" id="aWE-Mi-D8Z"/>
+                                    <constraint firstItem="Dc6-y4-nc8" firstAttribute="centerX" secondItem="M4Z-z3-055" secondAttribute="centerX" id="qKt-YL-fZJ"/>
+                                    <constraint firstItem="VwU-s7-XcF" firstAttribute="centerX" secondItem="M4Z-z3-055" secondAttribute="centerX" id="vqF-TL-wEx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M4Z-z3-055" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Fry-fV-FPq"/>
+                            <constraint firstItem="M4Z-z3-055" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GHb-a8-ogB"/>
+                            <constraint firstItem="M4Z-z3-055" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iLb-9R-tle"/>
+                            <constraint firstItem="M4Z-z3-055" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="jbN-Es-NyB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="512" height="512"/>
+    </resources>
+</document>
